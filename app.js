@@ -37,7 +37,7 @@ function Sorteio() {
     sorteio = parseInt(Math.random()*amigos.length);
     nomesorteado = amigos[sorteio];
     amigos.splice(sorteio,1);
-    // Não alterei o campo da página após haver o sorteio para ngm descobrir os sorteados através de eliminação.
+    // Não alterei o campo de nome na página após haver o sorteio para ngm descobrir os sorteados através de eliminação.
     let fraseSorteio = document.getElementById('resultado'); 
     fraseSorteio.innerHTML = `${nomesorteado} é seu amigo oculto!`;
     // Achei necessário temporizar a função, pois deve haver tempo para pessoa ver seu amigo oculto, porém não a próxima não deve ver.   
